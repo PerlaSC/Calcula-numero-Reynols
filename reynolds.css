@@ -1,0 +1,83 @@
+:root {
+    --font1: "Roboto", sans-serif;
+    --dark-color: #000003;
+    --main-color: #006bbb;
+    --beta-color: #e5e5f3;
+}
+
+body {
+    text-align: center;
+    margin: auto;
+    font-family: var(--font1);
+    color: var(--dark-color);
+}
+
+header {
+    height: 30px;
+    background-color: var(--main-color);
+}
+
+main {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: var(--font1);
+}
+
+.formula-container {
+    background-color: var(--beta-color);
+    margin: 2em;
+    padding: 10px;
+}
+
+.input {
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid var(--dark-color);
+    height: 20px;
+}
+
+#submit {
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    height: 30px;
+    width: 150px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.input-value {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.resultado {
+    border: 1px solid var(--dark-color);
+    width: 500px;
+    height: 150px;
+    font-size: 1em;
+    line-height: 1em;
+    margin: 20px auto;
+}
+
+@media (max-width: 850px) {
+    .input-value {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .resultado {
+        width: 400px;
+    }
+    main {
+        margin: 10px;
+    }
+}

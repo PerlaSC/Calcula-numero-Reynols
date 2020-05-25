@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reynolds.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet" />
+    <title>Número de Reynolds</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <h1>Número de Reynolds</h1>
+        <p>Ingresa los valores y obtén el número de Reynolds.</p>
+        <p>Asegúrate de que las unidades de los valores sean consistentes</p>
+
+        <div class="formula-container">
+            <p>
+                La fórmula para obtener el número de Reynolds es: <br />
+                <span>dvρ/μ</span>
+            </p>
+            <p>
+                Siendo: d= diámetro de la tubería, v = Velocidad del fluido, ρ = densidad del fluido, μ= Viscosidad del fluido
+            </p>
+        </div>
+        <section class="input-container">
+            <div class="input-value">
+                <div>
+                    <label for="diameter">Diametro en m</label><br />
+                    <input type="text" class="input" id="diametro" name="diameter" />
+                </div>
+                <div>
+                    <label for="velocity">Velocidad en m/s</label><br />
+                    <input type="text" class="input" id="velocidad" name="velocity" /><br />
+                </div>
+                <div>
+                    <label for="density">Densidad en kg/m3</label><br />
+                    <input type="text" class="input" id="densidad" name="density" /><br />
+                </div>
+                <div>
+                    <label for="viscosity">Viscosidad en Pa*s</label><br />
+                    <input type="text" class="input" id="viscosidad" name="viscosity" /><br />
+                </div>
+            </div>
+            <input type="submit" id="submit" value="Obtener valor" />
+            <div class="resultado">
+                <p id="resultado"></p>
+            </div>
+        </section>
+    </main>
+    <script src="reynolds.js"></script>
+</body>
+
+</html>
