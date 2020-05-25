@@ -75,9 +75,16 @@ h1 {
 
 @media (max-width: 600px) {
     .resultado {
-        width: 400px;
+        width: auto;
+        margin: 10px;
     }
     main {
         margin: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .input-value {
+        grid-template-columns: 1fr;
     }
 }
